@@ -8,7 +8,7 @@ git clone https://github.com/Raspberry-Pi-Software/Device-Manager && cd packages
 ```
 Use this command to remove the packages tool from your Pi:
 ```bash
-cd packages-tool && sudo bash uninstall;
+cd Device-Manager && sudo bash uninstall;
 ```
 The usage for this packages tool is:
 ```bash
