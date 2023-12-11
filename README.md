@@ -12,5 +12,5 @@ cd Device-Manager && sudo bash uninstall;
 ```
 The usage for this packages tool is:
 ```bash
-rpisft [install|uninstall|remove|delete|add|update|upgrade|force-upgrade] <package>
+TO BE MADE
 ```
