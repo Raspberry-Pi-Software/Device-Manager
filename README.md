@@ -4,7 +4,7 @@ A Simple Device Manager For Managing Devices On Your Raspberry Pi (supported mod
 # Use The Device Manager
 Use this command to install the packages tool onto your Pi:
 ```bash
-git clone https://github.com/Raspberry-Pi-Software/Device-Manager && cd packages-tool && sudo bash install;
+git clone https://github.com/Raspberry-Pi-Software/Device-Manager && cd Device-Manager && sudo bash install;
 ```
 Use this command to remove the packages tool from your Pi:
 ```bash
