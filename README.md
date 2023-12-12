@@ -1,6 +1,6 @@
 # Device Manager
 A Simple Device Manager For Managing Devices On Your Raspberry Pi (supported model)
-> ⚠️Device Manager runs on a **Python 3.11 or later** installation. Make sure your Python installation is up to date!
+> ⚠️ Device Manager runs on a **Python 3.11 or later** installation. Make sure your Python installation is up to date!
 
 > ✖️ If you have any problems or issues while *installing and initializing on a **supported model***, make an issue [here](https://github.com/Raspberry-Pi-Software/Device-Manager/issues).
 
