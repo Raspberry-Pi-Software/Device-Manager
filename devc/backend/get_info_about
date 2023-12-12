@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-if [[ $1 == "cpu" ]]; then
-  echo -n $(lscpu);
-  exit;
-fi;
