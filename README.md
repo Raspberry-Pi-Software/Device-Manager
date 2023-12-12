@@ -28,5 +28,6 @@ cd Device-Manager && sudo bash uninstall;
 ```
 The usage for this tool is:
 ```bash
-TO BE MADE
+rpisft exec device-manager
 ```
+This command will open the client UI for device manager. __***There is no way to open a Device Manager session without the Qt UI initialised.***__
