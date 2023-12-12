@@ -4,6 +4,9 @@ A Simple Device Manager For Managing Devices On Your Raspberry Pi (supported mod
 
 > ✖️ If you have any problems or issues while *installing and initializing on a **supported model***, make an issue [here](https://github.com/Raspberry-Pi-Software/Device-Manager/issues).
 
+Device Manager is made in Qt. It is an easy way to manage devices, update drivers, mount/unmount disks and more! It's backend is written in Bash and it's frontend is written in Python. It's backend is initialised by a service file which executes this (`rpisft exec device-manager --executor=backend <command>`) command for the frontend to communicate with it.
+
+
 # Use The Device Manager
 ## In package tool:
 Use this command to install Device Manager onto your Pi using the Package Tool:
