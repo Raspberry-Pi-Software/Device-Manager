@@ -12,3 +12,7 @@ class WSGI(Flask):
     @self.route('/')
     def route():
       return "HAHA"
+
+    self.run(host='0.0.0.0', port=random.randint(1111,99999))
+
+WSGI()
