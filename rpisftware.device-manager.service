@@ -1,0 +1,8 @@
+[Unit]
+Description=A Raspberry Pi Software Device Manager service that autostarts on boot, to make a server for managing disks and other devices plugged onto your Pi.
+
+[Service]
+ExecStart=/bin/rpisft exec device-manager-server
+
+[Install]
+WantedBy=multi-user.target
