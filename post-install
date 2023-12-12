@@ -1,0 +1,17 @@
+# Device Manager | Post installation commands
+echo "DEVCMGR> Determining pip configuration...";
+testcommand=$(pip install flask);
+if [[ $testcommand == *"externally-managed-environment"* ]]; then
+  tput setaf 2;
+  echo "There was an error. Adding --break-system-packages to command...";
+  tput sgr0;
+  tput setaf 3;
+  echo 'Installing flask...';
+  pip install --break-system-packages flask;
+  echo 'Installing PyQt5...';
+  pip install --break-system-packages PyQt5;
+  echo 'Installing PySide6...';
+  pip install --break-system-packages PySide6;
+  echo 'Trying to install tkinter...';
+  sudo apt install -y python3-tk;
+fi;
