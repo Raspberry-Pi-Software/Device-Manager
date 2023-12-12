@@ -3,16 +3,40 @@
 echo "DEVCMGR> Determining pip configuration...";
 testcommand=$(pip install flask);
 if [[ $testcommand == *"externally-managed-environment"* ]]; then
-  tput setaf 2;
+  tput setaf 1;
   echo "There was an error. Adding --break-system-packages to command...";
   tput sgr0;
-  tput setaf 3;
+  tput setaf 2;
   echo 'Installing flask...';
   pip install --break-system-packages flask;
   echo 'Installing PyQt5...';
   pip install --break-system-packages PyQt5;
   echo 'Installing PySide6...';
   pip install --break-system-packages PySide6;
-  echo 'Trying to install tkinter...';
-  sudo apt install -y python3-tk;
+else
+  tput setaf 1;
+  echo "There was an error. Adding --break-system-packages to command...";
+  tput sgr0;
+  tput setaf 2;
+  echo 'Installing flask...';
+  pip install --break-system-packages flask;
+  echo 'Installing PyQt5...';
+  pip install --break-system-packages PyQt5;
+  echo 'Installing PySide6...';
+  pip install --break-system-packages PySide6;
+fi;
+
+echo 'Trying to install tkinter...';
+sudo apt install -y python3-tk;
+
+echo 'Making rpisftware.device-manager.service';
+if [[ -e rpisftware.device-manager.service ]]; then
+  echo "? Service file exists.";
+  echo "Making rpisftware.device-manager.service (copying)";
+  
+else
+  tput setaf 1;
+  echo "There was an error. Service file doesn't exist.";
+  echo "DEVCMGR> Fatal error: the install could not continue.\n         Stop code: BAD_SERVC_FILE";
+  exit;
 fi;
