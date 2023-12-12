@@ -1,1 +1,5 @@
 #!/usr/bin/env bash
+if [[ $1 == "cpu_name" ]]; then
+  echo -n $(lscpu | sed -nr '/Model name/ s/.*:\s*(.*) @ .*/\1/p');
+  exit;
+fi;
