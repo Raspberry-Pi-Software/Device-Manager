@@ -1,3 +1,4 @@
+#!/bin/bash
 # Device Manager | Post installation commands
 echo "DEVCMGR> Determining pip configuration...";
 testcommand=$(pip install flask);
