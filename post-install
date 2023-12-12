@@ -33,7 +33,9 @@ echo 'Making rpisftware.device-manager.service';
 if [[ -e rpisftware.device-manager.service ]]; then
   echo "? Service file exists.";
   echo "Making rpisftware.device-manager.service (copying)";
-  
+  cp rpisftware.device-manager.service /etc/systemd/system;
+  # activate the device manager service file to start on boot
+  sudo systemctl start rpisftware.device-manager.service;
 else
   tput setaf 1;
   echo "There was an error. Service file doesn't exist.";
